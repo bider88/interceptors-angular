@@ -18,7 +18,8 @@ export class AppComponent implements OnInit {
 
   getUsers() {
     this.userService.getUsers().subscribe(
-      res => console.log(res)
+      res => console.log(res),
+      err => console.log('Error en el app component')
     );
   }
 
